@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equipe - Engenheiros da Vila</title>
+    <!-- INÍCIO -->
+    <link rel="shortcut icon" href="img/favicon.ico.png" type="image/x-icon" />
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FIM -->
+    <link rel="stylesheet" href="styles/equipe.css" />
+  </head>
+  <body>
+    <header class="h">
+      <button id="menu-button">Menu</button>
+      <div class="navegacao">
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="img/logo.png"
+            alt="Engenheiros da Vila - LOGO"
+        /></a>
+        <nav class="navegation">
+          <ul class="navegation-ul">
+            <li>
+              <a class="centro" href="index.html">Início</a>
+            </li>
+            <li>
+              <a class="centro" href="roboeprojeto.html">O Robô</a>
+            </li>
+            <li>
+              <a class="centro" href="jogos.html">Jogos</a>
+            </li>
+            <li>
+              <a class="centro" href="equipe.html">Sobre nós</a>
+            </li>
+            <div class="contato">
+              <li>
+                <a href="contato.html">Seja nosso sócio</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="um">
+        <div class="texto-esquerdo">
+          <h1>NOSSO TIME</h1>
+          <p class="primeirop">
+            Apresentamos a equipe “Engenheiros da Vila”, um nome que carrega a
+            essência do nosso robô e a inspiração do jogo Bloons TD 6. Assim
+            como o macaco engenheiro, personagem astuto e habilidoso do jogo que
+            se passa em uma vibrante vila de macacos, nós, os Engenheiros da
+            Vila, trazemos a mesma engenhosidade e espírito competitivo para a
+            Robocup FIAP.
+          </p>
+
+          <h2>Integrantes da Equipe</h2>
+          <div class="linha">
+            <p>Fernando</p>
+            <p>João Henrique</p>
+            <p>Luan Rodrigues</p>
+            <p>Mauro</p>
+            <p>Vitória Ribeiro</p>
+          </div>
+        </div>
+
+        <figure>
+          <img src="img/Innovation.gif" alt="Inovação" width="300px"/>
+        </figure>
+      </section>
+
+      <section class="dois">
+        <p class="emojis">#ROBÓTICA</p>
+        <h1>Quem somos?</h1>
+        <p>
+          Temos a missão de trazer a robótica para todas as salas de aula
+          brasileiras, com foco educacional nas áreas de logística, programação,
+          computação, engenharia e mecatrônica. Usando organização, recursos,
+          apoio, incentivo e investimento para tirar a limitação dos alunos
+          brasileiros de terem um melhor conhecimento para o futuro nas
+          indústrias robotizadas, que demandam mão de obra altamente
+          qualificada.
+        </p>
+      </section>
+    </main>
+
+    <footer>© 2023/2024 - Engenheiros da Vila</footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector("#menu-button");
+        const navegation = document.querySelector(".navegation");
+        const navegacao = document.querySelector("navegacao");
+        const header = document.querySelector(".h");
+        const navUl = document.querySelector(".navegation-ul");
+        menuButton.addEventListener("click", function () {
+          if (navegation.style.display === "block") {
+            navegation.style.display = "none";
+            header.style.height = "122px";
+            header.style.display = "flex";
+            navUl.style.flexDirection = "row";
+            menuButton.style.marginTop = "0px";
+            menuButton.style.position = "static";
+          } else {
+            navegation.style.display = "block";
+            header.style.height = "55vh";
+            header.style.display = "block";
+            navUl.style.flexDirection = "column";
+            menuButton.style.position = "relative";
+            menuButton.style.top = "39px";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O Robô - Engenheiros da Vila</title>
+    <!-- INÍCIO -->
+    <link rel="shortcut icon" href="img/favicon.ico.png" type="image/x-icon" />
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FIM -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/orobo.css" />
+  </head>
+  <body class="b">
+    <header class="h">
+      <button id="menu-button">Menu</button>
+      <div class="navegacao">
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="img/logo.png"
+            alt="Engenheiros da Vila - LOGO"
+        /></a>
+        <nav class="navegation">
+          <ul class="navegation-ul">
+            <li>
+              <a class="centro" href="index.html">Início</a>
+            </li>
+            <li>
+              <a class="centro" href="roboeprojeto.html">O Robô</a>
+            </li>
+            <li>
+              <a class="centro" href="jogos.html">Jogos</a>
+            </li>
+            <li>
+              <a class="centro" href="equipe.html">Sobre nós</a>
+            </li>
+            <div class="contato">
+              <li>
+                <a href="contato.html">Seja nosso sócio</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      
+    </header>
+
+    <main>
+      <section class="texto">
+        <figure>
+          <img src="img/sentinela.svg" alt="Sentinela - O Robô" width="300px" />
+        </figure>
+        <div class="texto">
+          <h1>SENTINELA</h1>
+          <p>
+            Apresentamos o Sentinela, o nosso robô inspirado no jogo Bloons TD
+            6, um divertido jogo de estratégia onde macacos usam armas variadas
+            para estourar balões. O nome do robô vem de um equipamento que o
+            macaco engenheiro (personagem do jogo) usa para detectar e atacar os
+            balões com precisão. O nosso competidor é equipado com uma arma
+            principal que contém agulhas na ponta, que se ativam quando o robô
+            adversário se aproxima, estourando o balão do oponente. O Sentinela
+            é um robô inteligente, ágil e competitivo, que vai impressionar você
+            na Robocup FIAP.
+          </p>
+
+          <p class="ultimalinha">
+            Venha conhecer o nosso projeto e torcer pelo Sentinela!
+          </p>
+        </div>
+      </section>
+
+      <!-- Bootstrap -->
+      <section class="strap">
+        <div class="texto2">
+          <h3 class="etapas">Montagem do Robô</h3>
+          <p class="obs">(Observação: A construção do robô ainda esta em andamento...)</p>
+
+          <!-- Accordion -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  1º Passo - Planejamento do Projeto
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Reunimos nossa equipe e discutimos possíveis temas para
+                  inspiração. Após uma sessão de brainstorming, decidimos que
+                  nosso robô teria um tema relacionado com um jogo. O objetivo
+                  era criar um design criativo e funcional, levando em
+                  consideração a funcionalidade da arma e a estética geral.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  2º Passo - Compra dos Componentes Necessários
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>Adquirimos os seguintes materiais:</p>
+                  <ul>
+                    <li>
+                      Bases de madeira MDF 3mm e 6mm: Formaram a estrutura do
+                      robô.
+                    </li>
+                    <li>
+                      Arduino MEGA 2560: A placa microcontroladora que serviria
+                      como o cérebro do nosso robô.
+                    </li>
+                    <li>
+                      Shield de Motor: Essencial para controlar os motores DC
+                      que movem o robô.
+                    </li>
+                    <li>Shield Bluetooth HC-06: Para comunicação sem fio.</li>
+                    <li>
+                      Protoboard de 400 pontos: Facilitou a conexão dos
+                      componentes.
+                    </li>
+                    <li>
+                      Transistor BD 135: Usado para amplificar sinais elétricos.
+                    </li>
+                    <li>
+                      Motores DC 3V com rodas: Responsáveis pelo movimento do
+                      robô e da arma.
+                    </li>
+                    <li>Corrediça de gaveta: Utilizada para a arma.</li>
+                    <li>
+                      Chave de fim de curso: Detecta limites físicos, ativando a
+                      arma ao encostar em algo.
+                    </li>
+                    <li>Fita LED: Adicionada para efeitos visuais.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  3º Passo - Montagem, Construção e Design
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      Começamos montando a base, fixando os motores, as rodas e
+                      a base para arma.
+                    </li>
+                    <li>
+                      Em seguida, conectamos os fios e programamos o Arduino
+                      para controlar os movimentos do robô e da arma,
+                      programando para que ao enconstar na chave de fim de
+                      curso, a arma deve ser ativada.
+                    </li>
+                    <li>
+                      A fita LED foi adicionada para informar quando o robô esta
+                      ligado, quando a arma é ativada e desativada.
+                    </li>
+                    <li>O design final esta em andamento...</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="alinhar">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="7"
+                aria-label="Slide 8"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/carousel/1.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Etapas para a construção:</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZW5qczBncTQwcWo1bHZqYTl2YmtkMGVmYzdydm05ejNrbjI1cWY1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/66pfTIwDALQfpom77d/giphy.gif"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Corte a laser para o MDF</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel/2.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>As bases do nosso robô</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel/3.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Bases encaixadas</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel/4.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Primeiro protótipo à esquerda e segundo protótipo à direita</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel/5.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Seguimos com o segundo protótipo, sendo possível terminar a montagem</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel/6.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>O sistema de armas</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                src="https://s12.gifyu.com/images/SZrPN.gif"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Robô em funcionamento</h5>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+      
+      </section>
+    </main>
+
+    <footer>© 2023/2024 - Engenheiros da Vila</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded",function(){
+        const menuButton=document.querySelector('#menu-button');
+        const navegation = document.querySelector('.navegation');
+        const navegacao = document.querySelector('navegacao');
+        const header = document.querySelector('.h');
+        const navUl = document.querySelector('.navegation-ul');
+        menuButton.addEventListener('click', function() {
+        if (navegation.style.display === 'block') {
+            navegation.style.display = 'none';
+            header.style.height='122px';
+            header.style.display='flex';
+            navUl.style.flexDirection = 'row'
+            menuButton.style.marginTop="0px";
+            menuButton.style.position = 'static';
+            
+        } else {
+            navegation.style.display = 'block';
+            header.style.height='55vh';
+            header.style.display='block';
+            navUl.style.flexDirection = 'column'
+            menuButton.style.position = 'relative';
+            menuButton.style.top="39px";
+            
+        }
+    });
+      })
+    </script>
+  </body>
+</html>

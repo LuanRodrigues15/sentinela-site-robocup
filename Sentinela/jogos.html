@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogos - Engenheiros da Vila</title>
+    <!-- INÍCIO -->
+    <link rel="shortcut icon" href="img/favicon.ico.png" type="image/x-icon" />
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FIM -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/jogos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="h">
+      <button id="menu-button">Menu</button>
+      <div class="navegacao">
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="img/logo.png"
+            alt="Engenheiros da Vila - LOGO"
+        /></a>
+        <nav class="navegation">
+          <ul class="navegation-ul">
+            <li>
+              <a class="centro" href="index.html">Início</a>
+            </li>
+            <li>
+              <a class="centro" href="roboeprojeto.html">O Robô</a>
+            </li>
+            <li>
+              <a class="centro" href="jogos.html">Jogos</a>
+            </li>
+            <li>
+              <a class="centro" href="equipe.html">Sobre nós</a>
+            </li>
+            <div class="contato">
+              <li>
+                <a href="contato.html">Seja nosso sócio</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      
+    </header>
+
+   
+    <main>
+      <section class="game">
+        <p class="emojis">#GAME</p>
+        <div class="text">
+        <h1 class="game">SPACE FIGHTERS</h1>
+        <p>Lute em uma arena espacial onde cada colisão é crucial para a vitória. Apenas um robô emergirá triunfante! </p>
+      </div>
+        <div style="text-align: -webkit-center;">
+        <div id ='spacefighters' style="width: 80%;height: 580px;border-radius: 10px;">
+            <img style="height: 580px;
+          width: 100%;
+          object-fit: cover; border-radius: 20px;" src="img/spacefighters.gif" alt="">
+          
+          <span style="position: absolute;font-size: 95px;font-family: Honk; left: 50%;transform: translate(-50%, 65%);">Space Fighters</span>
+          <a href="ojogo.html" target="_blank" class="blink" style="position: absolute;font-size: 75px;font-family: Honk; left: 50%;transform: translate(-47%, 200%);">Play</a>
+        </div>
+      </div>
+      
+    </section>
+
+      <section class="manual">
+        <h1>Manual de Aventuras</h1>
+          
+        <article>
+          <h2>Capítulo 1: A Missão</h2>
+          <div class="img">
+            <img src="img/manual/cap1.jpeg" alt="cap1" width="400px">
+          </div>
+          <p>
+            Bem-vindo, jovem inventor! Sua missão, caso decida aceitá-la, é
+            construir o mais incrível robô autônomo usando o poderoso Arduino
+            Mega. Esta jornada o levará através de terras desconhecidas de
+            circuitos e códigos.
+          </p>
+        </article>
+        
+        <article>
+          <h2>Capítulo 2: O Tesouro de Componentes</h2>
+          <div class="img">
+            <img src="img/manual/cap2.jpeg" alt="cap1" width="400px">
+          </div>
+          <p>
+            Antes de começar, você precisará reunir os seguintes artefatos
+            mágicos:
+          </p>
+          <ol>
+            <li><strong>Arduino Mega:</strong> O cérebro do seu robô.</li>
+            <li>
+              <strong>Chassi de Robô:</strong> As pernas e pés do seu
+              companheiro mecânico.
+            </li>
+            <li>
+              <strong>Motores:</strong> Para mover-se em direção à glória.
+            </li>
+            <li>
+              <strong>Sensores:</strong> Os olhos que veem além do horizonte.
+            </li>
+            <li>
+              <strong>Motor Shield:</strong> O coração que bombeia energia para
+              os motores.
+            </li>
+            <li><strong>Bateria:</strong> O elixir da vida para o seu robô.</li>
+          </ol>
+        </article>
+
+        
+        <article>
+          <h2>Capítulo 3: A Montagem do Escudo</h2>
+          <div class="img">
+            <img src="img/manual/cap3.jpeg" alt="cap1" width="400px">
+          </div>
+          <p>
+            Com o chassi como base, monte o escudo onde todos os componentes
+            mágicos serão fixados. Use sua chave de fenda encantada para fixar o
+            Arduino Mega no centro do chassi.
+          </p>
+        
+        </article>
+
+        
+        <article>
+          <h2>Capítulo 4: O Ritual dos Condutores</h2>
+          <div class="img">
+            <img src="img/manual/cap4.jpeg" alt="cap1" width="400px">
+          </div>
+          <p>
+            Agora, é hora de realizar o ritual de conexão. Siga o antigo
+            pergaminho do esquema elétrico para conectar os motores ao driver e
+            o driver ao Arduino Mega. Lembre-se, cada fio é uma veia por onde a
+            energia flui.
+          </p>
+       
+        </article>
+
+        
+        <article>
+          <h2>Capítulo 5: O Encantamento do Código</h2>
+          <div class="img">
+            <img src="img/manual/cap5.jpeg" alt="cap1" width="400px">
+          </div>
+          <p>
+            Abra o livro sagrado da IDE do Arduino e invoque o código que dará
+            vida ao seu robô. Use feitiços (funções) para controlar os motores e
+            ler os sensores.
+          </p>
+        
+        </article>
+
+        
+        <article>
+          <h2>Capítulo 6: O Primeiro Passo</h2>
+          <div class="img">
+            <img src="img/manual/cap6.jpeg" alt="cap1" width="400px">
+          </div>
+          <p>
+            Com tudo em seu lugar, é hora de testar. Dê vida ao seu robô com o
+            toque do botão 'Upload'. Veja-o se mover e explorar o mundo ao seu
+            redor. Mas cuidado com os obstáculos!
+          </p>
+        </article>
+
+        <article>
+            <h2>Capítulo 7: A Jornada Continua</h2>
+          <div class="img">
+            <img src="img/manual/cap7.jpeg" alt="cap1" width="400px">
+          </div>
+          <p>
+            Sua aventura apenas começou. Experimente com diferentes feitiços e
+            talismãs (componentes adicionais). Adicionar um módulo Bluetooth
+            para controlá-lo à distância e LEDs para iluminar o caminho!
+          </p>
+        
+        </article>
+
+        
+        <article>
+          <h2>Epílogo: O Mestre Inventor</h2>
+          <p>
+            Parabéns, você completou a primeira parte de sua jornada. Agora, com
+            seu robô ao seu lado, você está pronto para enfrentar desafios ainda
+            maiores. O que você construirá a seguir?
+          </p>
+        
+        </article>
+      </section>
+    </main>
+
+    <footer>© 2023/2024 - Engenheiros da Vila</footer>
+    <script>
+      document.addEventListener("DOMContentLoaded",function(){
+        const menuButton=document.querySelector('#menu-button');
+        const navegation = document.querySelector('.navegation');
+        const navegacao = document.querySelector('navegacao');
+        const header = document.querySelector('.h');
+        const navUl = document.querySelector('.navegation-ul');
+        menuButton.addEventListener('click', function() {
+        if (navegation.style.display === 'block') {
+            navegation.style.display = 'none';
+            header.style.height='122px';
+            header.style.display='flex';
+            navUl.style.flexDirection = 'row'
+            menuButton.style.marginTop="0px";
+            menuButton.style.position = 'static';
+            
+        } else {
+            navegation.style.display = 'block';
+            header.style.height='55vh';
+            header.style.display='block';
+            navUl.style.flexDirection = 'column'
+            menuButton.style.position = 'relative';
+            menuButton.style.top="39px";
+            
+        }
+    });
+      })
+    </script>
+  </body>
+</html>

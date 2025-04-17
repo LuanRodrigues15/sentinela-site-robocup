@@ -1,0 +1,237 @@
+/* GLOBAL */
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.navegacao {
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  height: 122px;
+  background: #20003f;
+}
+
+header nav ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+img.logo {
+  margin-left: 24px;
+}
+
+#menu-button {
+  display: none;
+}
+nav ul {
+  padding-top: 23px;
+  display: flex;
+  width: Hug (702.07px);
+  height: Hug (40.36px);
+  gap: 114px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+}
+li a {
+  white-space: nowrap;
+}
+a.centro {
+  white-space: nowrap;
+}
+a.centro:hover {
+  color: #8a4cf5;
+}
+
+div.contato li a {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+div.contato {
+  background: linear-gradient(to left, #3d006b 50%, #8a4cf5 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all 0.5s ease;
+  margin-right: 24px;
+  margin-left: 270px;
+  border-radius: 30px;
+  padding: 10px 17px 10px;
+}
+
+div.contato:hover {
+  background-position: left;
+}
+
+/* 
+  -----------------------------
+           FIM GLOBAL 
+  -----------------------------
+  */
+
+main {
+  margin-inline: 13%;
+}
+
+/* Section parte de cima */
+
+section {
+  margin-block: 40px;
+  align-items: center;
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.2);
+}
+
+/*texto*/
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+  color: #3d006b;
+}
+
+h2 {
+  padding-top: 20px;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #3d006b;
+}
+
+a.login{
+  text-decoration: none;
+  color: #3d006b;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+p {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+div.img {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 
+-----------------------------
+           FOOTER
+ -----------------------------
+*/
+
+footer {
+  margin: 50px 13% 5px;
+  bottom: 0;
+  padding: 10px;
+  border-top: 1px solid #b8b7b7;
+  text-align: center;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/*------------------------------------------*/
+/* MEDIA PRA NAVBAR*/
+@media only screen and (max-width: 1490px) {
+  nav ul {
+    gap: 50px;
+  }
+  div.contato {
+    margin-right: 27px;
+    margin-left: 0;
+    font-size: 16px;
+  }
+  .navegation li {
+    align-self: center;
+  }
+  .cima > .texto {
+    padding: 30px;
+  }
+  .h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* media para o resto*/
+  section.cardss {
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  div.card {
+    width: 65%;
+  }
+  div.cardbody {
+    width: 100%;
+  }
+  section.cima {
+    flex-direction: column;
+  }
+  section.baixo {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .navegacao {
+    justify-content: center;
+    display: block;
+  }
+  img.logo {
+    display: none;
+  }
+  a.centro {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .navegation {
+    display: none;
+  }
+
+  div.textoum {
+    margin-right: 0;
+  }
+  section.baixo {
+    margin: 0;
+  }
+  section.cima {
+    margin: 0;
+  }
+  #menu-button {
+    color: white;
+    margin-top: 0px;
+    margin-left: 3%;
+    display: block;
+    margin-right: 3%;
+  }
+}

@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+/*header*/
+header {
+    width: 1920px;
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+a.texto {
+    margin-top: 6px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #3d006b;
+    text-decoration: none;
+}
+/*geral*/
+input{
+    display: block;
+    margin-left:auto;
+    width: 94%;
+    margin-top:15px;
+    padding: 15px;
+    border:1px solid #858585;
+    border-radius: 5px;;
+}
+
+#container{
+    display: flex;
+    margin:auto;
+    padding: 50px;
+    width: 60%;
+    margin-top:80px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #d3d3d3;
+    justify-content: space-between;
+    
+}
+#direitaContainer{
+    width: 43%;
+}
+#esquerdaContainer{
+    width: 50%;
+    font-size: 36px;
+}
+#cadastrarLogin{
+    text-align: right;
+}
+#cadastrarLogin>a{
+    display: block;
+}
+#logoLogin{
+    border-radius: 50%;
+    width: 80px;
+}
+#cadastrar{
+    margin-top:10px;
+    border:none;
+    border-radius: 40px;
+    padding: 12px 14px;
+    color: white;
+    font-weight: 700;
+    background-color: #3d006b;
+    cursor: pointer;
+}
+#irParaLogin{
+    margin: 10px 0;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: left;
+    transform: translate(15.2%);
+
+}
+#paginaLogin{
+    font-size: 36px;
+}
+#textin{
+    font-size: 20px;
+}
+
+/* 
+-----------------------------
+           FOOTER
+ -----------------------------
+*/
+
+footer {
+    margin: 50px 13% 5px;
+    bottom: 0;
+    padding: 10px;
+    border-top: 1px solid #b8b7b7;
+    text-align: center;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 300;
+  }

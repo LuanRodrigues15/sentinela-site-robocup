@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Engenheiros da Vila</title>
+    <!-- INÍCIO -->
+    <link rel="shortcut icon" href="img/favicon.ico.png" type="image/x-icon" />
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FIM -->
+    <link rel="stylesheet" href="styles/contato.css" />
+  </head>
+  <body>
+    <header class="h">
+      <button id="menu-button">Menu</button>
+      <div class="navegacao">
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="img/logo.png"
+            alt="Engenheiros da Vila - LOGO"
+        /></a>
+        <nav class="navegation">
+          <ul class="navegation-ul">
+            <li>
+              <a class="centro" href="index.html">Início</a>
+            </li>
+            <li>
+              <a class="centro" href="roboeprojeto.html">O Robô</a>
+            </li>
+            <li>
+              <a class="centro" href="jogos.html">Jogos</a>
+            </li>
+            <li>
+              <a class="centro" href="equipe.html">Sobre nós</a>
+            </li>
+            <div class="contato">
+              <li>
+                <a href="contato.html">Seja nosso sócio</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="cima">
+        <h1>Engenheiros da Vila</h1>
+        <p>
+          Como estudantes de Sistemas de Informação, estamos empenhados não
+          apenas na construção de um projeto acadêmico, mas também na criação
+          das bases para nossa própria startup. Nosso objetivo é desenvolver um
+          sistema inovador que facilite a compra de kits de robótica e ofereça
+          treinamento para alunos iniciantes. Esses kits são cuidadosamente
+          projetados para enfrentar desafios do mundo real, proporcionando uma
+          experiência de aprendizado prática e envolvente. Estamos atentos às
+          tendências do mercado em constante crescimento da robótica educacional
+          no Brasil e estamos comprometidos em contribuir para esse setor em
+          expansão.
+        </p>
+      </section>
+      <section class="baixo">
+        <article>
+          <h1>Projeções de mercado</h1>
+          <h2>• Escolas urbanas, recursos de comunicação disponíves</h2>
+          <div class="img">
+            <img src="img/projeções/1.png" alt="escolas.." />
+          </div>
+          <p>
+            Ao observar os números destacados na imagem e sua localização nas
+            barras, percebe-se que o ambiente virtual, que desempenha um papel
+            fundamental no acesso às novas tecnologias e na aprendizagem de
+            robótica, apresenta uma grande deficiência nas escolas públicas em
+            comparação com as escolas privadas, iremos ajudar nessa necessidade
+            com programas gratuitos e acessíveis para todos.
+          </p>
+        </article>
+
+        <article>
+          <h2>
+            • Comparação do interesse em robôs indústriais no mercado externo e
+            interno
+          </h2>
+          <div class="img">
+            <img src="img/projeções/2.png" alt="unidades.." />
+          </div>
+          <p>
+            Nossa startup se compromete em preencher a falta de mão de obra
+            qualificada na Indústria 4.0 no Brasil. Nosso objetivo é acelerar a
+            formação digital e melhorar a cognição e o raciocínio lógico da
+            população brasileira. Ao analisar os dados, percebe-se que o Brasil
+            está muito atrás dos países desenvolvidos, mesmo países que não são
+            conhecidos por sua indústria desenvolvida, como o México e a França,
+            estão mais de 4 vezes à frente do Brasil. A falta de iniciativas
+            tecnológicas na educação, faz com que a necessidade e a importância
+            não sejam compreendidas pelo governo, resultando em investimento
+            insuficiente no país, isso criou um ciclo de baixíssimo interesse
+            industrial e econômico no país.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h3>Para desbloquear informações exclusivas, pedimos que faça o <a class="login" href="login.html">login</a></h3>
+      </section>
+    </main>
+
+    <footer>© 2023/2024 - Engenheiros da Vila</footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector("#menu-button");
+        const navegation = document.querySelector(".navegation");
+        const navegacao = document.querySelector("navegacao");
+        const header = document.querySelector(".h");
+        const navUl = document.querySelector(".navegation-ul");
+        menuButton.addEventListener("click", function () {
+          if (navegation.style.display === "block") {
+            navegation.style.display = "none";
+            header.style.height = "122px";
+            header.style.display = "flex";
+            navUl.style.flexDirection = "row";
+            menuButton.style.marginTop = "0px";
+            menuButton.style.position = "static";
+          } else {
+            navegation.style.display = "block";
+            header.style.height = "55vh";
+            header.style.display = "block";
+            navUl.style.flexDirection = "column";
+            menuButton.style.position = "relative";
+            menuButton.style.top = "39px";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
