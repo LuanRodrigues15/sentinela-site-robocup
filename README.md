@@ -135,7 +135,7 @@ sentinela/
 - Vitória Ribeiro
 
 ## Desenvolvedores do site
-- Luan Rodrigues (Estrutura do site, desing, layout, html, css)
+- Luan Rodrigues (Estrutura do site, design, layout, html, css, js, documentação)
 - João Henrique (Responsividade e jogo)
 
 ## 📚 Disciplina
